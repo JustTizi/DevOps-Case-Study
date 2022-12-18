@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Case_Study;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,12 +17,28 @@ namespace Case_Study
         string[] operands = { "+", "-", "*", "/" };
         Double total;
         int correctAnswers;
+        Difficulty diff;
 
-
-        public MathQuizzer()
+        
+        public MathQuizzer(Difficulty difficulty)
         {
+            switch (difficulty.Level)
+            {
+                case "Easy":
+                    diff = new Easy();
+                    break;
+                case "Normal":
+                    diff = new Normal();
+                    break;
+                case "Hard":
+                    diff = new Hard();
+                    break;
+                default:
+                    diff = new Easy();
+                    break;
+            }
             InitializeComponent();
-            MathQuizzer_Load();
+            MathQuizzer_Load(diff);
         }
 
         private void ButtonClick(object sender, EventArgs e)
@@ -37,12 +54,14 @@ namespace Case_Study
                     correct.ForeColor = Color.Green;
                     score.Text = "Score: " + correctAnswers.ToString();
                     answer.Text = answer.Text.Remove(0);
-                    MathQuizzer_Load();
+                    MathQuizzer_Load(diff);
                 }
                 else
                 {
-                    correct.Text = "Incorrect!";
-                    correct.ForeColor = Color.Red;
+                    MessageBox.Show("Oh no! You got it wrong...");
+                    GameOver gameOver = new GameOver(correctAnswers, diff);
+                    gameOver.Show();
+                    this.Hide();
                 }
             }
             else
@@ -62,25 +81,29 @@ namespace Case_Study
             
         }
 
-        private void MathQuizzer_Load()
+        private void MathQuizzer_Load(Difficulty difficulty)
         {
             
-            int firstNumber = rnd.Next(1, 1000);
-            int secondNumber = rnd.Next(1, 1000);
-            int operand = rnd.Next(0, 4);
+            Random rnd = new Random();
+            string[] operands = difficulty.Operands;
+            int operand = rnd.Next(0, operands.Length);
+            int firstNumber = rnd.Next(difficulty.MinValue, difficulty.MaxValue);
+            int secondNumber = rnd.Next(difficulty.MinValue, difficulty.MaxValue);
+            
+            
 
             switch (operands[operand])
             {
-                case "+":
+                case "+":                    
                     total = Math.Round((Double)firstNumber + secondNumber, 2);
                     break;
-                case "-":
+                case "-":                  
                     total = Math.Round((Double)firstNumber - secondNumber, 2);
                     break;
-                case "*":
+                case "*":                   
                     total = Math.Round((Double)firstNumber * secondNumber, 2);
                     break;
-                case "/":
+                case "/":                    
                     total = Math.Round((Double)firstNumber / secondNumber, 2);
                     break;
                 default:
@@ -93,6 +116,10 @@ namespace Case_Study
             this.operand.Text = operands[operand];
             
         }
-        
+
+        private void exitGame(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

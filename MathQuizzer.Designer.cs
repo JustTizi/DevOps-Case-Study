@@ -43,9 +43,10 @@
             // 
             this.score.AutoSize = true;
             this.score.BackColor = System.Drawing.SystemColors.Control;
-            this.score.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.score.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.score.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.score.Location = new System.Drawing.Point(12, 9);
+            this.score.Location = new System.Drawing.Point(14, 10);
+            this.score.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.score.Name = "score";
             this.score.Size = new System.Drawing.Size(72, 18);
             this.score.TabIndex = 0;
@@ -54,8 +55,9 @@
             // firstNumber
             // 
             this.firstNumber.AutoSize = true;
-            this.firstNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstNumber.Location = new System.Drawing.Point(106, 66);
+            this.firstNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.firstNumber.Location = new System.Drawing.Point(124, 76);
+            this.firstNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.firstNumber.Name = "firstNumber";
             this.firstNumber.Size = new System.Drawing.Size(55, 37);
             this.firstNumber.TabIndex = 1;
@@ -64,8 +66,9 @@
             // secondNumber
             // 
             this.secondNumber.AutoSize = true;
-            this.secondNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.secondNumber.Location = new System.Drawing.Point(347, 66);
+            this.secondNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.secondNumber.Location = new System.Drawing.Point(405, 76);
+            this.secondNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.secondNumber.Name = "secondNumber";
             this.secondNumber.Size = new System.Drawing.Size(55, 37);
             this.secondNumber.TabIndex = 2;
@@ -74,8 +77,9 @@
             // operand
             // 
             this.operand.AutoSize = true;
-            this.operand.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.operand.Location = new System.Drawing.Point(235, 66);
+            this.operand.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.operand.Location = new System.Drawing.Point(274, 76);
+            this.operand.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.operand.Name = "operand";
             this.operand.Size = new System.Drawing.Size(37, 37);
             this.operand.TabIndex = 3;
@@ -84,8 +88,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(481, 66);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(561, 76);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 37);
             this.label3.TabIndex = 4;
@@ -95,29 +100,32 @@
             // 
             this.correct.AutoSize = true;
             this.correct.BackColor = System.Drawing.SystemColors.Control;
-            this.correct.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.correct.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.correct.ForeColor = System.Drawing.Color.Green;
-            this.correct.Location = new System.Drawing.Point(349, 205);
+            this.correct.Location = new System.Drawing.Point(407, 237);
+            this.correct.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.correct.Name = "correct";
             this.correct.Size = new System.Drawing.Size(0, 25);
             this.correct.TabIndex = 5;
             // 
             // answer
             // 
-            this.answer.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.answer.Location = new System.Drawing.Point(594, 66);
+            this.answer.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.answer.Location = new System.Drawing.Point(693, 76);
+            this.answer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.answer.Name = "answer";
-            this.answer.Size = new System.Drawing.Size(100, 44);
+            this.answer.Size = new System.Drawing.Size(116, 44);
             this.answer.TabIndex = 6;
             // 
             // btnCheckAnswer
             // 
             this.btnCheckAnswer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnCheckAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCheckAnswer.ForeColor = System.Drawing.Color.Black;
-            this.btnCheckAnswer.Location = new System.Drawing.Point(340, 130);
+            this.btnCheckAnswer.Location = new System.Drawing.Point(397, 150);
+            this.btnCheckAnswer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCheckAnswer.Name = "btnCheckAnswer";
-            this.btnCheckAnswer.Size = new System.Drawing.Size(105, 60);
+            this.btnCheckAnswer.Size = new System.Drawing.Size(122, 69);
             this.btnCheckAnswer.TabIndex = 7;
             this.btnCheckAnswer.Text = "Check Answer";
             this.btnCheckAnswer.UseVisualStyleBackColor = false;
@@ -125,9 +133,9 @@
             // 
             // MathQuizzer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 250);
+            this.ClientSize = new System.Drawing.Size(933, 288);
             this.Controls.Add(this.btnCheckAnswer);
             this.Controls.Add(this.answer);
             this.Controls.Add(this.correct);
@@ -137,8 +145,10 @@
             this.Controls.Add(this.firstNumber);
             this.Controls.Add(this.score);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "MathQuizzer";
             this.Text = "Math Quizzer - Game";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.exitGame);
             this.ResumeLayout(false);
             this.PerformLayout();
 
