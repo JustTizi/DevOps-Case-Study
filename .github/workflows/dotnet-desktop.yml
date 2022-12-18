@@ -33,5 +33,5 @@ jobs:
     - name: Upload artifact - Windows
       uses: actions/upload-artifact@v1.0.0
       with:
-        name: MathQuizzer.exe
-        path: publish/MathQuizzer.exe
+        name: MathQuizzer
+        path: publish/
