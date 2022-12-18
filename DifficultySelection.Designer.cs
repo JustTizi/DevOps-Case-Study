@@ -47,7 +47,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(314, 40);
+            this.label1.Location = new System.Drawing.Point(341, 36);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(270, 51);
@@ -59,7 +59,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(338, 183);
+            this.label2.Location = new System.Drawing.Point(365, 183);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(219, 25);
@@ -105,50 +105,56 @@
             // highScoreEasy
             // 
             this.highScoreEasy.AutoSize = true;
-            this.highScoreEasy.Location = new System.Drawing.Point(126, 422);
+            this.highScoreEasy.Location = new System.Drawing.Point(107, 419);
             this.highScoreEasy.Name = "highScoreEasy";
-            this.highScoreEasy.Size = new System.Drawing.Size(0, 15);
+            this.highScoreEasy.Size = new System.Drawing.Size(69, 15);
             this.highScoreEasy.TabIndex = 5;
+            this.highScoreEasy.Text = "Placeholder";
             // 
             // highScoreNormal
             // 
             this.highScoreNormal.AutoSize = true;
-            this.highScoreNormal.Location = new System.Drawing.Point(449, 419);
+            this.highScoreNormal.Location = new System.Drawing.Point(394, 419);
             this.highScoreNormal.Name = "highScoreNormal";
-            this.highScoreNormal.Size = new System.Drawing.Size(0, 15);
+            this.highScoreNormal.Size = new System.Drawing.Size(69, 15);
             this.highScoreNormal.TabIndex = 6;
+            this.highScoreNormal.Text = "Placeholder";
             // 
             // highScoreHard
             // 
             this.highScoreHard.AutoSize = true;
-            this.highScoreHard.Location = new System.Drawing.Point(743, 419);
+            this.highScoreHard.Location = new System.Drawing.Point(684, 419);
             this.highScoreHard.Name = "highScoreHard";
-            this.highScoreHard.Size = new System.Drawing.Size(0, 15);
+            this.highScoreHard.Size = new System.Drawing.Size(69, 15);
             this.highScoreHard.TabIndex = 7;
+            this.highScoreHard.Text = "Placeholder";
             // 
             // highPlayerEasy
             // 
             this.highPlayerEasy.AutoSize = true;
-            this.highPlayerEasy.Location = new System.Drawing.Point(126, 455);
+            this.highPlayerEasy.Location = new System.Drawing.Point(107, 455);
             this.highPlayerEasy.Name = "highPlayerEasy";
-            this.highPlayerEasy.Size = new System.Drawing.Size(0, 15);
+            this.highPlayerEasy.Size = new System.Drawing.Size(69, 15);
             this.highPlayerEasy.TabIndex = 8;
+            this.highPlayerEasy.Text = "Placeholder";
             // 
             // highPlayerNormal
             // 
             this.highPlayerNormal.AutoSize = true;
-            this.highPlayerNormal.Location = new System.Drawing.Point(442, 455);
+            this.highPlayerNormal.Location = new System.Drawing.Point(394, 455);
             this.highPlayerNormal.Name = "highPlayerNormal";
-            this.highPlayerNormal.Size = new System.Drawing.Size(0, 15);
+            this.highPlayerNormal.Size = new System.Drawing.Size(69, 15);
             this.highPlayerNormal.TabIndex = 9;
+            this.highPlayerNormal.Text = "Placeholder";
             // 
             // highPlayerHard
             // 
             this.highPlayerHard.AutoSize = true;
-            this.highPlayerHard.Location = new System.Drawing.Point(741, 459);
+            this.highPlayerHard.Location = new System.Drawing.Point(684, 455);
             this.highPlayerHard.Name = "highPlayerHard";
-            this.highPlayerHard.Size = new System.Drawing.Size(0, 15);
+            this.highPlayerHard.Size = new System.Drawing.Size(69, 15);
             this.highPlayerHard.TabIndex = 10;
+            this.highPlayerHard.Text = "Placeholder";
             // 
             // DifficultySelection
             // 

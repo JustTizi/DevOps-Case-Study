@@ -21,16 +21,18 @@ namespace Case_Study
             InitializeComponent();
             finalScore = totalScore;
             diff = difficulty;
-            score.Text = "Your final Score:\n" + totalScore.ToString();
+            lblfinalScore.Text = totalScore.ToString();
         }
 
         private void submitName_Click(object sender, EventArgs e)
         {
-            if (nameField.Text == "")
+            String nameFieldEntry = nameField.Text.Trim();
+
+            if (nameFieldEntry == "")
             {
                 MessageBox.Show("Please enter a name");
             }
-            else if (nameField.Text.Length > 20)
+            else if (nameFieldEntry.Length > 20)
             {
                 MessageBox.Show("Please enter a name less than 20 characters");
             }
@@ -38,7 +40,7 @@ namespace Case_Study
             {
                 using (SQLiteConnection conn = Program.CreateConnection())
                 {
-                    Program.InsertData(conn, nameField.Text, finalScore, diff);
+                    Program.InsertData(conn, nameFieldEntry, finalScore, diff);
 
                     conn.Close();
                 }

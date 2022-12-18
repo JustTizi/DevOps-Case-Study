@@ -29,22 +29,23 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameOver));
-            this.score = new System.Windows.Forms.Label();
+            this.lblfinalScore = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.nameField = new System.Windows.Forms.TextBox();
             this.submitName = new System.Windows.Forms.Button();
+            this.score = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // score
+            // lblfinalScore
             // 
-            this.score.AutoSize = true;
-            this.score.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.score.ForeColor = System.Drawing.Color.Fuchsia;
-            this.score.Location = new System.Drawing.Point(289, 48);
-            this.score.Name = "score";
-            this.score.Size = new System.Drawing.Size(209, 32);
-            this.score.TabIndex = 0;
-            this.score.Text = "Your final Score: ";
+            this.lblfinalScore.AutoSize = true;
+            this.lblfinalScore.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblfinalScore.ForeColor = System.Drawing.Color.Fuchsia;
+            this.lblfinalScore.Location = new System.Drawing.Point(293, 31);
+            this.lblfinalScore.Name = "lblfinalScore";
+            this.lblfinalScore.Size = new System.Drawing.Size(209, 32);
+            this.lblfinalScore.TabIndex = 0;
+            this.lblfinalScore.Text = "Your final Score: ";
             // 
             // label1
             // 
@@ -75,18 +76,30 @@
             this.submitName.UseVisualStyleBackColor = true;
             this.submitName.Click += new System.EventHandler(this.submitName_Click);
             // 
+            // score
+            // 
+            this.score.AutoSize = true;
+            this.score.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.score.ForeColor = System.Drawing.Color.Crimson;
+            this.score.Location = new System.Drawing.Point(362, 83);
+            this.score.Name = "score";
+            this.score.Size = new System.Drawing.Size(72, 30);
+            this.score.TabIndex = 4;
+            this.score.Text = "label2";
+            // 
             // GameOver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 272);
+            this.Controls.Add(this.score);
             this.Controls.Add(this.submitName);
             this.Controls.Add(this.nameField);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.score);
+            this.Controls.Add(this.lblfinalScore);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GameOver";
-            this.Text = "GameOver";
+            this.Text = "Math Quizzer - Game Over";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.exitGame);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -95,9 +108,10 @@
 
         #endregion
 
-        private Label score;
+        private Label lblfinalScore;
         private Label label1;
         private TextBox nameField;
         private Button submitName;
+        private Label score;
     }
 }
