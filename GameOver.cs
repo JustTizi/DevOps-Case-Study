@@ -21,7 +21,7 @@ namespace Case_Study
             InitializeComponent();
             finalScore = totalScore;
             diff = difficulty;
-            lblfinalScore.Text = totalScore.ToString();
+            score.Text = totalScore.ToString();
         }
 
         private void submitName_Click(object sender, EventArgs e)
