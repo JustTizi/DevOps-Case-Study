@@ -26,4 +26,17 @@ jobs:
         dotnet-version: 7.0.x
 
     - name: Publish
-      run: dotnet publish -r win-x64 -c Release /p:PublishSingleFile=true
+      run: dotnet publish -o publish/ -r win-x64 -c Release --self-contained /p:PublishSingleFile=true
+
+    - name: Upload artifact - Windows
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: MathQuizzer.exe
+        path: publish/MathQuizzer.exe
+    - name: Make Release
+      uses: softprops/action-gh-release@v1
+      if: startsWith(github.ref, 'refs/tags/')
+      with:
+        files: publish/MathQuizzer.exe
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
