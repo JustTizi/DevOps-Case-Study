@@ -83,9 +83,9 @@
             this.score.ForeColor = System.Drawing.Color.Crimson;
             this.score.Location = new System.Drawing.Point(362, 83);
             this.score.Name = "score";
-            this.score.Size = new System.Drawing.Size(72, 30);
+            this.score.Size = new System.Drawing.Size(128, 30);
             this.score.TabIndex = 4;
-            this.score.Text = "label2";
+            this.score.Text = "Placeholder";
             // 
             // GameOver
             // 
