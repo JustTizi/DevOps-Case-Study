@@ -11,6 +11,7 @@ namespace Case_Study
     {
         /// <summary>
         /// The main entry point for the application.
+        /// Gang
         /// </summary>
         [STAThread]
         static void Main()
